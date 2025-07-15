@@ -3,7 +3,7 @@
 @theme base {
     --color-neutral-900: hsl(0, 0%, 8%) ;
     --color-neutral-800: hsl(0, 0%, 12%) ;
-    --color-neutral-600: hsl(0, 0%, 20%) ;
+    --color-neutral-700: hsl(0, 0%, 20%) ;
     --color-neutral-100: hsl(0, 0%, 100%) ;
 
     --color-main: hsl(75, 94%, 57%) ;
@@ -27,7 +27,7 @@
     }
 
     .component__links a{
-        @apply w-full hover:bg-main hover:text-neutral-900 bg-neutral-600 h-10 inline-flex items-center justify-center rounded-lg transition-all;
+        @apply w-full hover:bg-main hover:text-neutral-900 bg-neutral-700 h-10 inline-flex items-center justify-center rounded-lg transition-all;
 
     }
 }
