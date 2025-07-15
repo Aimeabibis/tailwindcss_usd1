@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme base {
+    --color-neutral-900: hsl(0, 0%, 8%) ;
+    --color-neutral-800: hsl(0, 0%, 12%) ;
+    --color-neutral-600: hsl(0, 0%, 20%) ;
+    --color-neutral-100: hsl(0, 0%, 100%) ;
+
+    --color-main: hsl(75, 94%, 57%) ;
+
+    --spacing-inner: 2rem;
+    --spacing-outer: 1rem;
+
+    --font-inter: "Inter", sans-serif;
+
+    --text-normal: 0.875 rem;
+    --text-title: 1.5 rem;
+
+}
+
+@layer base {
+    body {
+        min-height: 100vh;
+        background-color: var(--color-neutral-900);
+        display: grid;
+        place-content: center;
+    }
+
+    .component__links a{
+        @apply w-full hover:bg-main hover:text-neutral-900 bg-neutral-600 h-10 inline-flex items-center justify-center rounded-lg transition-all;
+
+    }
+}
+
